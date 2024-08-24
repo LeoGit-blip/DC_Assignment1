@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DC_Assignment.Properties
+namespace Client.Properties
 {
 
 

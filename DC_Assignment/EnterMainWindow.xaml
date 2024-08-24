@@ -52,11 +52,12 @@
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Background>
         </TextBox>
-        <Label Content="Enter Lobby Name" HorizontalAlignment="Left" Height="26" Margin="334,410,0,0" VerticalAlignment="Top" Width="173" FontWeight="Bold" FontFamily="Calibri">
+        <Label Content="Enter Lobby Name" HorizontalAlignment="Left" Height="26" Margin="344,410,0,0" VerticalAlignment="Top" Width="173" FontWeight="Bold" FontFamily="Calibri">
             <Label.Foreground>
                 <SolidColorBrush Color="#FFE8E3E3" Opacity="0.6"/>
             </Label.Foreground>
         </Label>
         <Label Content="CREATE  NEW  LOBBY" HorizontalAlignment="Center" Height="40" Margin="0,322,0,0" VerticalAlignment="Top" Width="312" FontFamily="Papyrus" FontWeight="Bold" Foreground="Black" FontSize="20"/>
+        <Label Content="LOBBY  PORTAL" HorizontalAlignment="Center" Height="40" Margin="0,23,0,0" VerticalAlignment="Top" Width="214" FontFamily="Papyrus" FontWeight="Bold" Foreground="Black" FontSize="20"/>
     </Grid>
 </Window>

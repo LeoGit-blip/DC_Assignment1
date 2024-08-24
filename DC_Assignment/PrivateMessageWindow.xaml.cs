@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace DC_Assignment
+namespace Client
 {
     /// <summary>
     /// Interaction logic for PrivateMessageWindow.xaml

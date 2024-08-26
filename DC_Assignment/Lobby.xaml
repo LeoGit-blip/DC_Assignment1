@@ -13,15 +13,11 @@
             <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
-                    <GradientStop Color="#FF215373" Offset="1"/>
+                    <GradientStop Color="#FF214073" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Button x:Name="Start_Button" Content="START" HorizontalAlignment="Left" Height="37" Margin="11,0,0,0" VerticalAlignment="Center" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
         </Border>
-        <Button x:Name="Private_Message_Button" HorizontalAlignment="Left" Height="38" Margin="133,0,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" Foreground="White" BorderBrush="White" FontFamily="Perpetua Titling MT" FontWeight="Bold" BorderThickness="0,0,3,0">
-            <TextBlock TextAlignment="Center" Foreground="White" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold"><Run Text="PRIVATE"/><LineBreak/><Run Text="MESSAGE"/></TextBlock>
-        </Button>
-        <Border BorderThickness="5,5,5,5" HorizontalAlignment="Left" Height="63" Margin="183,351,0,0" VerticalAlignment="Top" Width="618" BorderBrush="White">
+        <Border BorderThickness="5,5,5,5" HorizontalAlignment="Left" Height="63" Margin="190,351,0,0" VerticalAlignment="Top" Width="611" BorderBrush="White">
             <Border.Background>
                 <SolidColorBrush Color="#FFFBFBFB" Opacity="0.55"/>
             </Border.Background>
@@ -46,7 +42,6 @@
             </Button.Background>
         </Button>
         <Label Content="JOINED USERS" HorizontalAlignment="Left" Height="26" Margin="53,109,0,0" VerticalAlignment="Top" Width="91" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
-        <Label Content="CHAT" HorizontalAlignment="Left" Height="26" Margin="465,54,0,0" VerticalAlignment="Top" Width="41" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="220" Margin="21,137,0,0" VerticalAlignment="Top" Width="149">
             <Border.Background>
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
@@ -60,45 +55,42 @@
                 </ListBox.Background>
             </ListBox>
         </Border>
-        <Button x:Name="Option_Button"  HorizontalAlignment="Left" Height="16" Margin="780,6,0,0" VerticalAlignment="Top" Width="26" Foreground="White" FontFamily="Perpetua Titling MT" FontWeight="Bold" BorderThickness="0,0,3,0" FontSize="16" BorderBrush="{x:Null}" RenderTransformOrigin="1.278,0.377">
-            <Button.Background>
-                <ImageBrush ImageSource="/options_icon.png"/>
-            </Button.Background>
-        </Button>
         <Label Content="REFRESH" HorizontalAlignment="Left" Height="26" Margin="1,67,0,0" VerticalAlignment="Top" Width="96" Foreground="White" FontFamily="Consolas"/>
-        <Label Content="OPTION" HorizontalAlignment="Left" Height="26" Margin="768,23,0,0" VerticalAlignment="Top" Width="60" Foreground="Snow" FontFamily="Perpetua Titling MT" FontSize="9"/>
-        <RichTextBox x:Name="Chat_Message_Box" HorizontalAlignment="Left" Height="258" Margin="183,0,0,0" VerticalAlignment="Center" Width="618" BorderBrush="White" BorderThickness="5,5,5,5" VerticalScrollBarVisibility="Visible">
-            <RichTextBox.Background>
-                <SolidColorBrush Color="Black" Opacity="0.6"/>
-            </RichTextBox.Background>
-            <FlowDocument>
-                <Paragraph>
-                    <Run Foreground="#FFAFAAAA"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
-        <Grid x:Name="Private_Message_Grid" HorizontalAlignment="Left" Visibility="Visible" Height="257" Margin="486,173,0,0" VerticalAlignment="Top" Width="332" Background="#FF413C5D">
-            <Label Content="PRIVATE CHAT" HorizontalAlignment="Center" Height="26" Margin="0,9,0,0" VerticalAlignment="Top" Width="90" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
-            <Button x:Name="Close_Button" HorizontalAlignment="Left" Height="13" Margin="306,11,0,0" VerticalAlignment="Top" Width="13" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="/close_button.png"/>
-                </Button.Background>
-            </Button>
-            <TextBox x:Name="Private_Message_TextBox" HorizontalAlignment="Center" Height="35" Margin="0,200,0,0" TextWrapping="Wrap" Text="Enter your message..." VerticalAlignment="Top" Width="291" Background="#FF45474A" Foreground="#FFD8C4C4"/>
-            <Button HorizontalAlignment="Left" Height="19" Margin="255,208,0,0" VerticalAlignment="Top" Width="18" BorderBrush="{x:Null}">
-                <Button.Background>
-                    <ImageBrush ImageSource="/add_document_img.png"/>
-                </Button.Background>
-            </Button>
-            <Button HorizontalAlignment="Left" Height="38" Margin="273,200,0,0" VerticalAlignment="Top" Width="38" BorderBrush="{x:Null}" RenderTransformOrigin="0.461,0.185">
-                <Button.Background>
-                    <ImageBrush ImageSource="/send_message_img.png"/>
-                </Button.Background>
-            </Button>
-            <RichTextBox HorizontalAlignment="Center" Height="145" Margin="0,40,0,0" VerticalAlignment="Top" Width="290" Background="#FF45474A" VerticalScrollBarVisibility="Visible">
+        <Button x:Name="Start_Button" Content="START" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="Option_Button" Content="OPTION" HorizontalAlignment="Left" Height="38" Margin="137,0,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
+        <Grid x:Name="Public_Chat_Grid" Visibility="Visible" HorizontalAlignment="Left" Height="242" Margin="190,0,0,0" VerticalAlignment="Center" Width="611">
+            <Grid.Background>
+                <SolidColorBrush Color="#FF5D5D5D" Opacity="0.7"/>
+            </Grid.Background>
+            <RichTextBox x:Name="Public_Chat_Message_Box" HorizontalAlignment="Center" Height="222" VerticalAlignment="Top" Width="611" BorderBrush="White" BorderThickness="5,5,5,5" VerticalScrollBarVisibility="Visible" Margin="0,20,0,0" Foreground="White">
+                <RichTextBox.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.6"/>
+                </RichTextBox.Background>
                 <FlowDocument>
+                    <Paragraph>
+                        <Run Foreground="#FFAFAAAA"/>
+                    </Paragraph>
                 </FlowDocument>
             </RichTextBox>
+            <Label Content="PUBLIC CHAT ROOM" HorizontalAlignment="Center" Height="26" Margin="0,-4,0,0" VerticalAlignment="Top" Width="119" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
+        </Grid>
+        <Button Content="PUBLIC CHAT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="134" Margin="190,56,0,0" Background="#FF8A7E7E" FontFamily="Consolas" FontSize="14" FontWeight="Bold"/>
+        <Button Content="PRIVATE CHAT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="134" Margin="325,56,0,0" Background="#FFFFFBFB" FontFamily="Consolas" FontSize="14" FontWeight="Bold"/>
+        <Grid x:Name="Private_Chat_Grid" Visibility="Collapsed" HorizontalAlignment="Left" Height="242" Margin="190,0,0,0" VerticalAlignment="Center" Width="611">
+            <Grid.Background>
+                <SolidColorBrush Color="#FF5D5D5D" Opacity="0.7"/>
+            </Grid.Background>
+            <RichTextBox x:Name="Private_Chat_Message_Box" HorizontalAlignment="Center" Height="222" VerticalAlignment="Top" Width="611" BorderBrush="White" BorderThickness="5,5,5,5" VerticalScrollBarVisibility="Visible" Margin="0,20,0,0" Foreground="White">
+                <RichTextBox.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.6"/>
+                </RichTextBox.Background>
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Foreground="#FFAFAAAA"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <Label Content="PRIVATE CHAT ROOM" HorizontalAlignment="Center" Height="26" Margin="0,-4,0,0" VerticalAlignment="Top" Width="123" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
         </Grid>
     </Grid>
 

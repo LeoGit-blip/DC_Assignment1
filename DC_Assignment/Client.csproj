@@ -148,9 +148,6 @@
     <Resource Include="refresh_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="add_client_img.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

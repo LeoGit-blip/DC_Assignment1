@@ -92,6 +92,11 @@
             </RichTextBox>
             <Label Content="PRIVATE CHAT ROOM" HorizontalAlignment="Center" Height="26" Margin="0,-4,0,0" VerticalAlignment="Top" Width="123" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
         </Grid>
+        <Button HorizontalAlignment="Left" Height="38" Margin="762,365,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/send_message_img.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 
 </Window>

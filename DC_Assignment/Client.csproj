@@ -121,12 +121,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="mortal_kombat_x.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="mortal_kombat_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="MainPageImg.png" />
   </ItemGroup>
   <ItemGroup>
@@ -161,18 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="add_client_img.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="options_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="send_private_message.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="close_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="send_message_img_public.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="add_document_img_public.png" />

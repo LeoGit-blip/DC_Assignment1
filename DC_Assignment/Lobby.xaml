@@ -29,9 +29,9 @@
                     </Button.Background>
                 </Button>
                 <TextBox x:Name="Chat_Message_TextBox_Copy" Text="Enter your message..." HorizontalAlignment="Left" Height="42" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="563" Background="#FFF9F9F9"/>
-                <Button HorizontalAlignment="Left" Height="27" Margin="537,0,0,0" VerticalAlignment="Center" Width="28" BorderBrush="{x:Null}">
+                <Button x:Name="Add_Document_Button1" HorizontalAlignment="Left" Height="27" Margin="537,0,0,0" VerticalAlignment="Center" Width="28" BorderBrush="{x:Null}">
                     <Button.Background>
-                        <ImageBrush ImageSource="/add_document_img_public.png"/>
+                        <ImageBrush ImageSource="/add_document_img.png"/>
                     </Button.Background>
                 </Button>
             </Grid>

@@ -10,7 +10,7 @@
         <Image Source="/MainPageImg.png" Stretch="Fill" Margin="0,-5,0,-10"/>
         <Label Content="MORTAL KOMBAT X" HorizontalAlignment="Center" Height="54" Margin="0,30,0,0" VerticalAlignment="Top" Width="286" FontFamily="Showcard Gothic" FontSize="28" Background="Transparent" Foreground="White"/>
         <TextBox x:Name="UsernameBox" HorizontalAlignment="Center" Height="35" Margin="0,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" Background="#00000000" Foreground="White" BorderBrush="White" FontSize="14" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontFamily="Book Antiqua"/>
-        <Button HorizontalAlignment="Left" Height="32" Margin="514,399,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click" BorderBrush="{x:Null}">
+        <Button x:Name="Login_Button" HorizontalAlignment="Left" Height="32" Margin="514,399,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/arrow.png"/>
             </Button.Background>

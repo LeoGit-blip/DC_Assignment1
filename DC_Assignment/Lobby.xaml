@@ -1,9 +1,8 @@
-﻿<Window
+﻿<Window x:Class="DC_Assignment.Lobby"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DC_Assignment"
         mc:Ignorable="d"
         Title="Lobby" Height="450" Width="800">
     <Grid HorizontalAlignment="Left" Height="430" Margin="-21,0,0,0" VerticalAlignment="Top" Width="854">
@@ -21,13 +20,12 @@
                 <SolidColorBrush Color="#FFFBFBFB" Opacity="0.55"/>
             </Border.Background>
             <Grid HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="674">
-                <TextBox x:Name="Chat_Message_TextBox" Text="Enter your message..." HorizontalAlignment="Left" Height="42" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="563" Background="#FFF9F9F9"/>
                 <Button x:Name="Add_Document_Button" HorizontalAlignment="Left" Height="22" Margin="544,0,0,0" VerticalAlignment="Center" Width="22" BorderBrush="{x:Null}" RenderTransformOrigin="-0.295,0.911">
                     <Button.Background>
                         <ImageBrush ImageSource="/add_document_img.png"/>
                     </Button.Background>
                 </Button>
-                <TextBox x:Name="Chat_Message_TextBox_Copy" Text="Enter your message..." HorizontalAlignment="Left" Height="42" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="563" Background="#FFF9F9F9"/>
+                <TextBox x:Name="Chat_Message_TextBox" HorizontalAlignment="Left" Height="42" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="563" Background="#FFF9F9F9" TextChanged="Chat_Message_TextBox_TextChanged"/>
                 <Button x:Name="Add_Document_Button1" HorizontalAlignment="Left" Height="27" Margin="537,0,0,0" VerticalAlignment="Center" Width="28" BorderBrush="{x:Null}">
                     <Button.Background>
                         <ImageBrush ImageSource="/add_document_img.png"/>
@@ -73,8 +71,8 @@
             </RichTextBox>
             <Label Content="PUBLIC CHAT ROOM" HorizontalAlignment="Center" Height="26" Margin="0,-4,0,0" VerticalAlignment="Top" Width="119" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
         </Grid>
-        <Button Content="PUBLIC CHAT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="134" Margin="190,56,0,0" Background="#FF8A7E7E" FontFamily="Consolas" FontSize="14" FontWeight="Bold"/>
-        <Button Content="PRIVATE CHAT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="134" Margin="325,56,0,0" Background="#FFFFFBFB" FontFamily="Consolas" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="PublicChat_Button" Content="PUBLIC CHAT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="134" Margin="190,56,0,0" Background="#FF8A7E7E" FontFamily="Consolas" FontSize="14" FontWeight="Bold" Click="PublicChat_Button_Click"/>
+        <Button x:Name="PrivateChat_Button" Content="PRIVATE CHAT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="134" Margin="325,56,0,0" Background="#FFFFFBFB" FontFamily="Consolas" FontSize="14" FontWeight="Bold" Click="PrivateChat_Button_Click"/>
         <Grid x:Name="Private_Chat_Grid" Visibility="Collapsed" HorizontalAlignment="Left" Height="242" Margin="190,0,0,0" VerticalAlignment="Center" Width="611">
             <Grid.Background>
                 <SolidColorBrush Color="#FF5D5D5D" Opacity="0.7"/>
@@ -91,7 +89,7 @@
             </RichTextBox>
             <Label Content="PRIVATE CHAT ROOM" HorizontalAlignment="Center" Height="26" Margin="0,-4,0,0" VerticalAlignment="Top" Width="123" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
         </Grid>
-        <Button HorizontalAlignment="Left" Height="38" Margin="762,365,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}">
+        <Button x:Name="Send_Message_Button" HorizontalAlignment="Left" Height="38" Margin="762,365,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/send_message_img.png"/>
             </Button.Background>

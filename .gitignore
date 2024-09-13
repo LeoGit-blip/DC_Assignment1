@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/DC_Assignment/Client.csproj
+/DC_Assignment/MainWindow.xaml
+/DC_Assignment/packages.config

@@ -17,7 +17,7 @@ namespace BusinessServer
         {
             ChannelFactory<DServerInterface> foobFactory;
             NetTcpBinding tcp = new NetTcpBinding();
-            string URL = "net.tcp://localhost:8000/";
+            string URL = "net.tcp://localhost:8100/DataService";
             foobFactory = new ChannelFactory<DServerInterface>(tcp, URL);
             foob = foobFactory.CreateChannel();
         }
@@ -71,9 +71,9 @@ namespace BusinessServer
         {
             foob.CreateRoom(name, roomName);
         }
-        public List<string> getAllRoom(string roomName)
+        public List<string> GetAllRoom()
         {
-            return foob.getAllRoom(roomName);
+            return foob.GetAllRoom();
         }
 
         public List<string> getJoinedServer(string userName)

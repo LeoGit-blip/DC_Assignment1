@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DC_Assignment"
         mc:Ignorable="d"
         Title="EnterMainWindow" Height="450" Width="800">
     <Grid>
@@ -17,7 +16,7 @@
             <ScrollViewer.Background>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </ScrollViewer.Background>
-            <ListBox Height="150" Width="530" d:ItemsSource="{d:SampleData ItemCount=7}">
+            <ListBox x:Name="Room_List" Height="150" Width="530" d:ItemsSource="{d:SampleData ItemCount=7}">
                 <ListBox.Background>
                     <SolidColorBrush Color="White" Opacity="0.55"/>
                 </ListBox.Background>
@@ -36,12 +35,12 @@
                 <ImageBrush ImageSource="/exitbutton.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="CreateLobbyButton" Content="CREATE" HorizontalAlignment="Left" Height="42" Margin="593,366,0,0" VerticalAlignment="Top" Width="91" FontFamily="Consolas" FontWeight="Bold" FontSize="16" BorderBrush="Black" BorderThickness="3,3,3,3">
+        <Button x:Name="CreateLobbyButton" Content="CREATE" HorizontalAlignment="Left" Height="42" Margin="593,366,0,0" VerticalAlignment="Top" Width="91" FontFamily="Consolas" FontWeight="Bold" FontSize="16" BorderBrush="Black" BorderThickness="3,3,3,3" Click="CreateLobbyButton_Click_1">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="JoinGameButton" Content="JOIN" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="94" FontFamily="Consolas" FontSize="16" FontWeight="Bold" Margin="618,275,0,0" BorderThickness="3,3,3,3" BorderBrush="Black">
+        <Button x:Name="JoinGameButton" Content="JOIN" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="94" FontFamily="Consolas" FontSize="16" FontWeight="Bold" Margin="618,275,0,0" BorderThickness="3,3,3,3" BorderBrush="Black" Click="JoinGameButton_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

@@ -17,7 +17,7 @@
         </Button>
         <Image Margin="231,393,513,-3" Source="/username_icon.png" Stretch="Fill"/>
         <Label Content="ENTER USERNAME" HorizontalAlignment="Center" Height="32" Margin="0,365,0,0" VerticalAlignment="Top" Width="186" Foreground="White" FontSize="18" FontFamily="Perpetua Titling MT" FontWeight="Bold"/>
-        <Button x:Name="Add_Client_Button" Content="Button" HorizontalAlignment="Left" Height="66" Margin="724,0,0,0" VerticalAlignment="Top" Width="69" BorderBrush="{x:Null}">
+        <Button x:Name="Add_Client_Button" Content="Button" HorizontalAlignment="Left" Height="66" Margin="724,0,0,0" VerticalAlignment="Top" Width="69" BorderBrush="{x:Null}" Click="Add_Client_Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/add_client_img.png"/>
             </Button.Background>

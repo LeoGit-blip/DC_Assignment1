@@ -45,7 +45,7 @@ namespace DataServer
         List<string> getJoinedServer(string userName);//join server
 
         [OperationContract]
-        List<string> getAllRoom(string roomName); //display all room name
+        List<string> GetAllRoom(); //display all room name
 
         [OperationContract]
         GlobalMessage getServer(string roomName);//get server

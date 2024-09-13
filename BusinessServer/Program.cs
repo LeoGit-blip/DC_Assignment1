@@ -17,7 +17,7 @@ namespace BusinessServer
             NetTcpBinding tcp = new NetTcpBinding();
             host = new ServiceHost(typeof(BServer));
 
-            host.AddServiceEndpoint(typeof(BServerInterface), tcp, "net.tcp://localhost:8100/");
+            host.AddServiceEndpoint(typeof(BServerInterface), tcp, "net.tcp://localhost:8200/BusinessService");
             host.Open();
             Console.WriteLine("System Online");
             Console.ReadLine();

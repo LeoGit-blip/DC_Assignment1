@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -143,6 +144,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="add_client_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessServer\BusinessServer.csproj">
+      <Project>{E89148AE-58F3-43F4-860D-790768064152}</Project>
+      <Name>BusinessServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\DLL.csproj">
+      <Project>{80E9D86C-1ED1-465B-AAFC-8C9D4054C2A9}</Project>
+      <Name>DLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

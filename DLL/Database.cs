@@ -192,7 +192,7 @@ namespace DLL
 
         public void addNewChatServer(string userName, string roomName)//add new room
         {
-            GlobalMessage newRoom = null;
+            GlobalMessage newRoom = new GlobalMessage();
             newRoom.RoomName = roomName;
             newRoom.RoomID = serverID;
 

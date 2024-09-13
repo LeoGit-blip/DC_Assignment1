@@ -50,7 +50,7 @@ namespace BusinessServer
         List<string> getJoinedServer(string userName); // get joined server
 
         [OperationContract]
-        List<string> getAllRoom(string roomName); //display all room name
+        List<string> GetAllRoom(); //display all room name
 
         [OperationContract]
         GlobalMessage getServer(string roomName);// get room

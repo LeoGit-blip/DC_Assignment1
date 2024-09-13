@@ -17,7 +17,7 @@ namespace DataServer
             NetTcpBinding tcp = new NetTcpBinding();
             host = new ServiceHost(typeof(DataServer));
 
-            host.AddServiceEndpoint(typeof(DServerInterface), tcp, "net.tcp://localhost:8000/");
+            host.AddServiceEndpoint(typeof(DServerInterface), tcp, "net.tcp://localhost:8100/DataService");
             host.Open();
             Console.WriteLine("The system is now online");
             Console.ReadLine();

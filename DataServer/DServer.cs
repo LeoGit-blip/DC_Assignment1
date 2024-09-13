@@ -61,9 +61,9 @@ namespace DataServer
             return foob.addJoinedServer(userName, roomName);
         }
 
-        public List<string> getAllRoom(string roomName) //get all server
+        public List<string> GetAllRoom() //get all server
         {
-            return foob.getRoom(roomName);
+            return foob.AllServers;
         }
 
         public List<string> getJoinedServer(string userName) // return chat room

@@ -299,5 +299,14 @@ namespace DC_Assignment
             }
             catch (Exception) { throw; }
         }
+
+        private void Exit_Button_Click(object sender, RoutedEventArgs e)
+        {
+            foob.LeaveRoom(username, roomName);
+            Joined_Users_List.Items.Clear();
+            MessageBox.Show(username + "left the room");
+            enterMainWindow.Show();
+            this.Close();
+        }
     }
 }

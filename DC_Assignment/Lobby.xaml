@@ -94,7 +94,7 @@
                 <ImageBrush ImageSource="/send_message_img.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="Exit_Button" Content="EXIT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="Exit_Button" Content="EXIT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White" Click="Exit_Button_Click"/>
     </Grid>
 
 </Window>

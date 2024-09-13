@@ -26,14 +26,14 @@
                     </Button.Background>
                 </Button>
                 <TextBox x:Name="Chat_Message_TextBox" HorizontalAlignment="Left" Height="42" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="563" Background="#FFF9F9F9" TextChanged="Chat_Message_TextBox_TextChanged"/>
-                <Button x:Name="Add_Document_Button1" HorizontalAlignment="Left" Height="27" Margin="537,0,0,0" VerticalAlignment="Center" Width="28" BorderBrush="{x:Null}">
+                <Button x:Name="Add_Document_Button1" HorizontalAlignment="Left" Height="27" Margin="537,0,0,0" VerticalAlignment="Center" Width="28" BorderBrush="{x:Null}" Click="Add_Document_Button1_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="/add_document_img.png"/>
                     </Button.Background>
                 </Button>
             </Grid>
         </Border>
-        <Button x:Name="Refresh_Button" HorizontalAlignment="Left" Height="38" Margin="6,40,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}">
+        <Button x:Name="Refresh_Button" HorizontalAlignment="Left" Height="38" Margin="6,40,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Refresh_Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/refresh_button.png"/>
             </Button.Background>
@@ -46,7 +46,7 @@
             <Border.BorderBrush>
                 <SolidColorBrush Color="White" Opacity="0.515"/>
             </Border.BorderBrush>
-            <ListBox x:Name="Joined_Users_List" HorizontalAlignment="Center" Height="178" VerticalAlignment="Center" Width="114" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="White">
+            <ListBox x:Name="Joined_Users_List" HorizontalAlignment="Center" Height="178" VerticalAlignment="Center" Width="114" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="White" SelectionChanged="Joined_Users_List_SelectionChanged">
                 <ListBox.Background>
                     <SolidColorBrush Color="White" Opacity="0.5"/>
                 </ListBox.Background>

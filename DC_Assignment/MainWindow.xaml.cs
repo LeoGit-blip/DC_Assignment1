@@ -23,8 +23,7 @@ namespace Client
 
     public partial class MainWindow : Window
     {
-
-        private string username = "";
+        private string username  = "";
         private BServerInterface foob;
         public MainWindow()
         {

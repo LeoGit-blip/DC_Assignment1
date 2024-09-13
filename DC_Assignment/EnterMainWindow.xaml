@@ -12,6 +12,14 @@
             </Image.Effect>
         </Image>
 
+        <Button x:Name="Refresh_Button" HorizontalAlignment="Left" Height="38" Margin="750,8,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Refresh_Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/refresh_button.png"/>
+            </Button.Background>
+        </Button>
+
+        <Label Content="REFRESH" HorizontalAlignment="Left" Height="26" Margin="736,43,0,0" VerticalAlignment="Top" Width="96" Foreground="White" FontFamily="Consolas"/>
+        
         <ScrollViewer HorizontalAlignment="Center" Height="203" Margin="0,63,0,0" VerticalAlignment="Top" Width="624">
             <ScrollViewer.Background>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
@@ -22,7 +30,7 @@
                 </ListBox.Background>
             </ListBox>
         </ScrollViewer>
-        <Button x:Name="LeaveButton" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}">
+        <Button x:Name="LeaveButton" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="LeaveButton_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

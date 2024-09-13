@@ -47,7 +47,7 @@ namespace Client
             while(true)
             {
                 Thread.Sleep(5000);
-                roomListDelegate?.Invoke();
+                roomListDelegate.Invoke();
             }
         }
 
@@ -61,7 +61,7 @@ namespace Client
 
         private void refresh()
         {
-            Room_List.Items.Clear();
+            //Room_List.Items.Clear();
             List<string> allSevers = foob.GetAllRoom();
             if(allSevers.Count > 0)
             {
@@ -104,6 +104,18 @@ namespace Client
                 this.Hide();
                 refresh();
             }
+        }
+
+        private void Refresh_Button_Click(object sender, RoutedEventArgs e)
+        {
+            refresh();
+        }
+
+        private void LeaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            foob.logout(username);
+            loginMenu.Show();
+            this.Close();
         }
     }
 }

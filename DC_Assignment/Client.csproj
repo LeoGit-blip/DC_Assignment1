@@ -150,6 +150,10 @@
       <Project>{E89148AE-58F3-43F4-860D-790768064152}</Project>
       <Name>BusinessServer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataServer\DataServer.csproj">
+      <Project>{5db2359b-ebcc-4df8-8421-0b5e5a1bb919}</Project>
+      <Name>DataServer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DLL\DLL.csproj">
       <Project>{80E9D86C-1ED1-465B-AAFC-8C9D4054C2A9}</Project>
       <Name>DLL</Name>

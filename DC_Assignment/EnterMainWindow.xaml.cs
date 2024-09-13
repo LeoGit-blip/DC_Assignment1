@@ -34,6 +34,11 @@ namespace Client
             this.foob = inFoob;
             this.username = inUsername;
             this.loginMenu = inLoginMenu;
+            List<string> allSevers = foob.GetAllRoom();
+            foreach (string server in allSevers)
+            {
+                Room_List.Items.Add(server);
+            }
             refresh();
 
             roomListDelegate += updateRoomList;
@@ -61,7 +66,7 @@ namespace Client
 
         private void refresh()
         {
-            //Room_List.Items.Clear();
+            Room_List.Items.Clear();
             List<string> allSevers = foob.GetAllRoom();
             if(allSevers.Count > 0)
             {
@@ -96,7 +101,7 @@ namespace Client
         {
             string roomName = Create_Lobby_TextBox.Text.ToString();
 
-            if (!roomName.Equals(""))
+            if (!roomName.Equals("") && !foob.isRoomExist(roomName))
             {
                 foob.CreateRoom(username, roomName);
                 Lobby lobby = new Lobby(foob, roomName, username, this);

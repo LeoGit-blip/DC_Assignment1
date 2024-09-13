@@ -223,13 +223,13 @@ namespace DLL
             }
             return temp.RoomID;
         }
-        public bool checkRoomNameFound(string roomName)//
+        public bool checkRoomNameFound(string roomName)
         {
             bool found = false;
 
-            foreach (GlobalMessage room in roomChat)
+            foreach (String room in allServers)
             {
-                if (room.RoomName.Equals(roomName))
+                if (room.Equals(roomName))
                 {
                     found = true;
                 }
@@ -257,9 +257,11 @@ namespace DLL
                 if (temp[i].RoomName.Equals(currentRoom.RoomName))
                 {
                     allServers.RemoveAt(i);
+                    roomChat.RemoveAt(i);
                 }
             }
             roomChat.Add(currentRoom);
+            allServers.Add(currentRoom.RoomName);
         }
 
         //chat
@@ -297,7 +299,7 @@ namespace DLL
             {
                 MessageBox.Show("The player " + userName + "has already joined in this server.");
             }
-            else
+            else 
             {
                 List<string> newList = room.AllPlayers;
                 newList.Add(userName);
@@ -309,7 +311,7 @@ namespace DLL
             newroomList.Add(roomName);
             player.Room = newroomList;
             updateUserAccountInfo(player);
-            updataRoomInfo(room);
+            //updataRoomInfo(room);
             return joined;
         }
 

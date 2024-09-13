@@ -9,14 +9,14 @@
     <Grid>
         <Image Source="/MainPageImg.png" Stretch="Fill" Margin="0,-5,0,-10"/>
         <Label Content="MORTAL KOMBAT X" HorizontalAlignment="Center" Height="54" Margin="0,30,0,0" VerticalAlignment="Top" Width="286" FontFamily="Showcard Gothic" FontSize="28" Background="Transparent" Foreground="White"/>
-        <TextBox x:Name="UsernameBox" HorizontalAlignment="Center" Height="35" Margin="0,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" Background="#00000000" Foreground="White" BorderBrush="White" FontSize="14" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontFamily="Book Antiqua"/>
-        <Button x:Name="Login_Button" HorizontalAlignment="Left" Height="32" Margin="514,399,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click" BorderBrush="{x:Null}">
+        <TextBox x:Name="UsernameBox" HorizontalAlignment="Center" Height="35" Margin="0,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Background="#00000000" Foreground="White" BorderBrush="White" FontSize="14" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontFamily="Book Antiqua"/>
+        <Button x:Name="Login_Button" HorizontalAlignment="Left" Height="32" Margin="514,361,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/arrow.png"/>
             </Button.Background>
         </Button>
-        <Image Margin="231,393,513,-3" Source="/username_icon.png" Stretch="Fill"/>
-        <Label Content="ENTER USERNAME" HorizontalAlignment="Center" Height="32" Margin="0,365,0,0" VerticalAlignment="Top" Width="186" Foreground="White" FontSize="18" FontFamily="Perpetua Titling MT" FontWeight="Bold"/>
+        <Image Margin="230,355,514,34" Source="/username_icon.png" Stretch="Fill" RenderTransformOrigin="0.536,0.149"/>
+        <Label Content="ENTER USERNAME" HorizontalAlignment="Center" Height="32" Margin="0,322,0,0" VerticalAlignment="Top" Width="186" Foreground="White" FontSize="18" FontFamily="Perpetua Titling MT" FontWeight="Bold"/>
         <Button x:Name="Add_Client_Button" Content="Button" HorizontalAlignment="Left" Height="66" Margin="724,0,0,0" VerticalAlignment="Top" Width="69" BorderBrush="{x:Null}" Click="Add_Client_Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/add_client_img.png"/>

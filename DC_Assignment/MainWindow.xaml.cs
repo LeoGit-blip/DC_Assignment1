@@ -38,11 +38,19 @@ namespace Client
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(!foob.IsUserNameExist(username))
+            if (string.IsNullOrWhiteSpace(username))
             {
+                LoginFailure_Label.Visibility = Visibility.Visible;
+                LoginFailure_Label.Content = "Login Failed";
+                return;
+            }
+
+            if (!foob.IsUserNameExist(username))
+            {
+                LoginSuccess_Label.Visibility = Visibility.Visible;
+                LoginSuccess_Label.Content = "Login Success as " + "'" + username + "'";
                 foob.addUserAccountInfo(username);
                 foob.login(username);
-                MessageBox.Show("Registration Success. Log in as "+username+".");
                 EnterMainWindow enterMainWindow = new EnterMainWindow(foob, username, this);
                 enterMainWindow.Show();
                 this.Hide();
@@ -52,12 +60,14 @@ namespace Client
                 foob.getUserAccountInfo(username);
                 if(foob.IfLoggedIn(username))
                 {
-                    MessageBox.Show("The user is logged in");
+                    LoginFailure_Label.Visibility = Visibility.Visible;
+                    LoginFailure_Label.Content = "Username Exist: " + username;
                 }
                 else
                 {
+                    LoginSuccess_Label.Visibility = Visibility.Visible;
+                    LoginSuccess_Label.Content = "Login Success as " + "'" + username + "'";
                     foob.login(username);
-                    MessageBox.Show("Registration Success. Log in as " + username + ".");
                     EnterMainWindow enterMainWindow = new EnterMainWindow(foob, username, this);
                     enterMainWindow.Show();
                     this.Hide();

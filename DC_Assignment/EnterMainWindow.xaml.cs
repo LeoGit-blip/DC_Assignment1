@@ -88,7 +88,7 @@ namespace Client
                     Lobby lobby = new Lobby(foob, selectServer, username, this);
                     lobby.Show();
                     this.Hide();
-                    MessageBox.Show(username + " joined " + selectServer);
+                    // MessageBox.Show(username + " joined " + selectServer);
                 }
             }
             else

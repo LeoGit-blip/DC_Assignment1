@@ -309,7 +309,7 @@ namespace DC_Assignment
         {
             foob.LeaveRoom(username, roomName);
             Joined_Users_List.Items.Clear();
-            MessageBox.Show(username + "left the room");
+            //MessageBox.Show(username + "left the room");
             enterMainWindow.Show();
             this.Close();
         }

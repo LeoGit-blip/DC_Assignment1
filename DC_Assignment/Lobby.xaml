@@ -15,7 +15,7 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Border BorderThickness="5,5,5,5" HorizontalAlignment="Left" Height="63" Margin="190,351,0,0" VerticalAlignment="Top" Width="611" BorderBrush="White">
+        <Border BorderThickness="5,5,5,5" HorizontalAlignment="Left" Height="63" Margin="190,341,0,0" VerticalAlignment="Top" Width="611" BorderBrush="White">
             <Border.Background>
                 <SolidColorBrush Color="#FFFBFBFB" Opacity="0.55"/>
             </Border.Background>
@@ -33,13 +33,13 @@
                 </Button>
             </Grid>
         </Border>
-        <Button x:Name="Refresh_Button" HorizontalAlignment="Left" Height="38" Margin="6,40,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Refresh_Button_Click">
+        <Button x:Name="Refresh_Button" HorizontalAlignment="Left" Height="38" Margin="31,40,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Refresh_Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/refresh_button.png"/>
             </Button.Background>
         </Button>
-        <Label Content="JOINED USERS" HorizontalAlignment="Left" Height="26" Margin="53,109,0,0" VerticalAlignment="Top" Width="91" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="220" Margin="21,137,0,0" VerticalAlignment="Top" Width="149">
+        <Label Content="JOINED USERS" HorizontalAlignment="Left" Height="26" Margin="58,109,0,0" VerticalAlignment="Top" Width="91" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="220" Margin="29,137,0,0" VerticalAlignment="Top" Width="149">
             <Border.Background>
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </Border.Background>
@@ -52,7 +52,7 @@
                 </ListBox.Background>
             </ListBox>
         </Border>
-        <Label Content="REFRESH" HorizontalAlignment="Left" Height="26" Margin="1,67,0,0" VerticalAlignment="Top" Width="96" Foreground="White" FontFamily="Consolas"/>
+        <Label Content="REFRESH" HorizontalAlignment="Left" Height="26" Margin="23,67,0,0" VerticalAlignment="Top" Width="65" Foreground="White" FontFamily="Consolas"/>
         <Button x:Name="Start_Button" Content="START" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White" Margin="138,0,0,0"/>
         <Button x:Name="Option_Button" Content="OPTION" HorizontalAlignment="Left" Height="38" Margin="275,0,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
         <Grid x:Name="Public_Chat_Grid" Visibility="Visible" HorizontalAlignment="Left" Height="242" Margin="190,0,0,0" VerticalAlignment="Center" Width="611">
@@ -89,7 +89,7 @@
             </RichTextBox>
             <Label Content="PRIVATE CHAT ROOM" HorizontalAlignment="Center" Height="26" Margin="0,-4,0,0" VerticalAlignment="Top" Width="123" Foreground="White" FontWeight="Bold" FontFamily="Consolas"/>
         </Grid>
-        <Button x:Name="Send_Message_Button" HorizontalAlignment="Left" Height="38" Margin="762,365,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Button_Click">
+        <Button x:Name="Send_Message_Button" HorizontalAlignment="Left" Height="38" Margin="762,354,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/send_message_img.png"/>
             </Button.Background>

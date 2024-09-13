@@ -6,19 +6,19 @@
         mc:Ignorable="d"
         Title="EnterMainWindow" Height="450" Width="800">
     <Grid>
-        <Image Source="/bg_img.jpg" Stretch="Fill" Opacity="0.82">
+        <Image Source="/bg_img.jpg" Stretch="Fill" Opacity="0.82" HorizontalAlignment="Stretch" Height="NaN" VerticalAlignment="Stretch" Width="NaN">
             <Image.Effect>
                 <BlurEffect/>
             </Image.Effect>
         </Image>
 
-        <Button x:Name="Refresh_Button" HorizontalAlignment="Left" Height="38" Margin="750,8,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Refresh_Button_Click">
+        <Button x:Name="Refresh_Button" HorizontalAlignment="Left" Height="38" Margin="730,8,0,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Click="Refresh_Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/refresh_button.png"/>
             </Button.Background>
         </Button>
 
-        <Label Content="REFRESH" HorizontalAlignment="Left" Height="26" Margin="736,43,0,0" VerticalAlignment="Top" Width="96" Foreground="White" FontFamily="Consolas"/>
+        <Label Content="REFRESH" HorizontalAlignment="Left" Height="26" Margin="724,43,0,0" VerticalAlignment="Top" Width="66" Foreground="White" FontFamily="Consolas"/>
         
         <ScrollViewer HorizontalAlignment="Center" Height="203" Margin="0,63,0,0" VerticalAlignment="Top" Width="624">
             <ScrollViewer.Background>
@@ -30,7 +30,7 @@
                 </ListBox.Background>
             </ListBox>
         </ScrollViewer>
-        <Button x:Name="LeaveButton" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="LeaveButton_Click">
+        <Button x:Name="LeaveButton" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Click="LeaveButton_Click" Margin="9,0,0,0">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -43,7 +43,7 @@
                 <ImageBrush ImageSource="/exitbutton.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="CreateLobbyButton" Content="CREATE" HorizontalAlignment="Left" Height="42" Margin="593,366,0,0" VerticalAlignment="Top" Width="91" FontFamily="Consolas" FontWeight="Bold" FontSize="16" BorderBrush="Black" BorderThickness="3,3,3,3" Click="CreateLobbyButton_Click_1">
+        <Button x:Name="CreateLobbyButton" Content="CREATE" HorizontalAlignment="Left" Height="42" Margin="593,344,0,0" VerticalAlignment="Top" Width="91" FontFamily="Consolas" FontWeight="Bold" FontSize="16" BorderBrush="Black" BorderThickness="3,3,3,3" Click="CreateLobbyButton_Click_1">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -53,18 +53,18 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label Content="EXIT" HorizontalAlignment="Left" Height="27" Margin="10,32,0,0" VerticalAlignment="Top" Width="53" FontFamily="Consolas" FontSize="16" FontWeight="Bold" Foreground="#FF0A0909"/>
-        <TextBox x:Name="Create_Lobby_TextBox" HorizontalAlignment="Center" Height="56" Margin="0,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" BorderBrush="White" Foreground="White">
+        <Label Content="EXIT" HorizontalAlignment="Left" Height="27" Margin="17,32,0,0" VerticalAlignment="Top" Width="53" FontFamily="Consolas" FontSize="16" FontWeight="Bold" Foreground="#FF0A0909"/>
+        <TextBox x:Name="Create_Lobby_TextBox" HorizontalAlignment="Center" Height="56" Margin="0,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" BorderBrush="White" Foreground="White">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Background>
         </TextBox>
-        <Label Content="Enter Lobby Name" HorizontalAlignment="Left" Height="26" Margin="344,410,0,0" VerticalAlignment="Top" Width="173" FontWeight="Bold" FontFamily="Calibri">
+        <Label Content="Enter Lobby Name" HorizontalAlignment="Left" Height="26" Margin="344,391,0,0" VerticalAlignment="Top" Width="173" FontWeight="Bold" FontFamily="Calibri">
             <Label.Foreground>
                 <SolidColorBrush Color="#FFE8E3E3" Opacity="0.6"/>
             </Label.Foreground>
         </Label>
-        <Label Content="CREATE  NEW  LOBBY" HorizontalAlignment="Center" Height="40" Margin="0,322,0,0" VerticalAlignment="Top" Width="312" FontFamily="Papyrus" FontWeight="Bold" Foreground="Black" FontSize="20"/>
+        <Label Content="CREATE  NEW  LOBBY" HorizontalAlignment="Center" Height="40" Margin="0,306,0,0" VerticalAlignment="Top" Width="312" FontFamily="Papyrus" FontWeight="Bold" Foreground="Black" FontSize="20"/>
         <Label Content="LOBBY  PORTAL" HorizontalAlignment="Center" Height="40" Margin="0,23,0,0" VerticalAlignment="Top" Width="214" FontFamily="Papyrus" FontWeight="Bold" Foreground="Black" FontSize="20"/>
     </Grid>
 </Window>

@@ -53,8 +53,8 @@
             </ListBox>
         </Border>
         <Label Content="REFRESH" HorizontalAlignment="Left" Height="26" Margin="1,67,0,0" VerticalAlignment="Top" Width="96" Foreground="White" FontFamily="Consolas"/>
-        <Button x:Name="Start_Button" Content="START" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
-        <Button x:Name="Option_Button" Content="OPTION" HorizontalAlignment="Left" Height="38" Margin="137,0,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="Start_Button" Content="START" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White" Margin="138,0,0,0"/>
+        <Button x:Name="Option_Button" Content="OPTION" HorizontalAlignment="Left" Height="38" Margin="275,0,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
         <Grid x:Name="Public_Chat_Grid" Visibility="Visible" HorizontalAlignment="Left" Height="242" Margin="190,0,0,0" VerticalAlignment="Center" Width="611">
             <Grid.Background>
                 <SolidColorBrush Color="#FF5D5D5D" Opacity="0.7"/>
@@ -94,6 +94,7 @@
                 <ImageBrush ImageSource="/send_message_img.png"/>
             </Button.Background>
         </Button>
+        <Button x:Name="Exit_Button" Content="EXIT" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,3,0" FontFamily="Perpetua Titling MT" FontSize="14" FontWeight="Bold" Foreground="White"/>
     </Grid>
 
 </Window>

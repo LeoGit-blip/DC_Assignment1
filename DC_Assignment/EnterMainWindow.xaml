@@ -54,7 +54,7 @@
             </Button.Effect>
         </Button>
         <Label Content="EXIT" HorizontalAlignment="Left" Height="27" Margin="10,32,0,0" VerticalAlignment="Top" Width="53" FontFamily="Consolas" FontSize="16" FontWeight="Bold" Foreground="#FF0A0909"/>
-        <TextBox x:Name="Create_Lobby_TextBox" HorizontalAlignment="Center" Height="56" Margin="0,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" BorderBrush="White">
+        <TextBox x:Name="Create_Lobby_TextBox" HorizontalAlignment="Center" Height="56" Margin="0,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" BorderBrush="White" Foreground="White">
             <TextBox.Background>
                 <SolidColorBrush Color="Black" Opacity="0.55"/>
             </TextBox.Background>

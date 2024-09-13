@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Windows;
 using System.Windows.Documents;
+using System.Windows.Media;
 using System.Windows.Navigation;
 
 namespace DC_Assignment
@@ -120,6 +121,8 @@ namespace DC_Assignment
         {
             allChat = true;
             pmChat = false;
+            PublicChat_Button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF8A7E7E"));
+            PrivateChat_Button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFBFB"));
             Public_Chat_Grid.Visibility = Visibility.Visible;
             Private_Chat_Grid.Visibility = Visibility.Collapsed;
         }
@@ -128,6 +131,8 @@ namespace DC_Assignment
         {
             allChat = false;
             pmChat = true;
+            PublicChat_Button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFBFB"));
+            PrivateChat_Button.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF8A7E7E"));
             Public_Chat_Grid.Visibility = Visibility.Collapsed;
             Private_Chat_Grid.Visibility = Visibility.Visible;
             refreshPrivateMessage();
